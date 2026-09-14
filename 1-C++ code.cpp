@@ -1,9 +1,28 @@
-
 #include <iostream>
+using namespace std;
 
 int main() {
-    
-    std::cout << "Hello world.";
+    cout << "Hello world.\n";
+    int score;
+    cin >> score;
+    switch (score / 10) {
+        case 10: 
+        case 9:  
+            cout << "A+";
+            break;
+        case 8:  
+            cout << "B+";
+            break;
+        case 7:  
+            cout << "C+";
+            break;
+        case 6:  
+            cout << "D";
+            break;
+        default:
+            cout << "invalid";
+            break;
+    }
 
     return 0;
 }
