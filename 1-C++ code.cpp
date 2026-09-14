@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    cout << "Hello world.\n";
+    
     int score;
     cin >> score;
     switch (score / 10) {
@@ -20,7 +20,7 @@ int main() {
             cout << "D";
             break;
         default:
-            cout << "invalid";
+            cout << "F";
             break;
     }
 
