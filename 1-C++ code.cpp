@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-    
     int score;
     cin >> score;
     switch (score / 10) {
