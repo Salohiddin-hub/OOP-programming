@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-    int i=0;
-
-    while(i<10)
+    int i=10;
+    
+    do
     {
         cout<<"While - " <<i<<endl;
-        i++;
-    }
+        i--;
+    } while(i>0);
     return 0;
 }
