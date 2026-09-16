@@ -1,24 +1,24 @@
-#include <iostream>
-using namespace std;
-int main() {
-    char letter;
-    cout<<"Enter any letter you want: ";
-    cin >> letter;
-    switch (letter) {
-        case 'a': 
-        case 'i':  
-        case 'e':  
-        case 'o':   
-        case 'u':
-            cout<< "Vowel";
-            break;
-        default:
-            cout << "consonant";
-            break;
-    }
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     char letter;
+//     cout<<"Enter any letter you want: ";
+//     cin >> letter;
+//     switch (letter) {
+//         case 'a': 
+//         case 'i':  
+//         case 'e':  
+//         case 'o':   
+//         case 'u':
+//             cout<< "Vowel";
+//             break;
+//         default:
+//             cout << "consonant";
+//             break;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 // #include <iostream>
@@ -41,29 +41,40 @@ int main() {
 
 
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main() {
-//     int a;
-//     int b;
-//     char operation;
-//     cin<<a;
-//     cout>>"Enter your first number: "
-//     cin<<"Enter operator number (+, *, -, /): "
-//     cout>>
-//     cin<<"Enter your second number: "
-//     if (operation=="+"){
-//         cout>>a+b;
-//     }
-//     else if (operation=="-"){
-//         cout>>a-b;
-//     }
-//     else if (operation=="*"){
-//         cout>>a+b;
-//     }
-//     else if (operation=="/"){
-//         cout>>a+b;
-//     }
-//     return 0;
-// }
+int main() {
+    int a;
+    int b;
+    char operation;
+    
+    cout << "Enter your first number: ";
+    cin >> a;
+    cout << "Enter operation: ";
+    cin >> operation;
+    cout << "Enter your second number: ";
+    cin >> b;
+    
+    if (operation == '+') {
+        cout << a + b;
+    }
+    else if (operation == '-') {
+        cout << a - b;
+    }
+    else if (operation == '*') {
+        cout << a * b; 
+    }
+    else if (operation == '/') {
+        if (b != 0) {
+            cout << a / b; 
+        } else {
+            cout << "Error: Division by zero!";
+        }
+    }
+    else {
+        cout << "Invalid operation!";
+    }
+
+    return 0;
+}
