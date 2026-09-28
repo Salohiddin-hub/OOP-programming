@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
-void Fun (int x=5 );
+void info (int id, string fname, string dept);
 int main() {
-    Fun();//Function calling
+    info(12260175,"Salohiddin","ISE");//Function calling
+    info(12260220,"Abdulloh","IBT");//Function calling    
 }
 // Function Definition
-void Fun(int x)
+void info(int id, string fname, string dept)
 {
-    cout<<"With Parameter value: "<<x;
+    cout<<"ID "<<id<<"\n"<<"Name: "<<fname<<"\n"<<"Department: "<<dept<<endl<<"\n";
 }
