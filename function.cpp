@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-void Fun (int x );
+void Fun (int x=5 );
 int main() {
-    Fun(20);//Function calling
+    Fun();//Function calling
 }
 // Function Definition
 void Fun(int x)
