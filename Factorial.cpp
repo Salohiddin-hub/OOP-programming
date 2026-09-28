@@ -13,63 +13,19 @@
 //     return 0;
 // }
 
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-//     int n;
-//     int i = 1; // Start at 1 so the first increment makes it 2
-//     cout << "Enter value of n: ";
-//     cin >> n;
-
-//     do {
-//         i++; // Increment first
-        
-//         if (i > n) {
-//             break; // Stop if i exceeds n
-//         }
-
-//         if (i % 2 == 0) {
-//             continue;
-//         }
-//         else if (i % 3 == 0) {
-//             continue;
-//         }
-//         else if (i % 5 == 0) {
-//             continue;
-//         }
-//         else if (i % 7 == 0) {
-//             continue;
-//         }
-//         else {
-//             cout << i << " "; // Print numbers not divisible by 2, 3, 5, or 7
-//         }
-        
-//     } while (i < n); // Correct do-while syntax with a semicolon
-
-//     return 0;
-// }
-
-
-
-
-
-
-
-
-
-
 #include <iostream>
 using namespace std;
 int main() {
     int n;
-    int i=2;
+    int i=1;
     cout << "Enter value of n: ";
     cin>>n;
-    do
-    {
+    do{
         i++;
+        if (i>n)
+        {
+            break;
+        }
         if (i%2==0)
         {
             continue;
@@ -88,13 +44,8 @@ int main() {
         }
         else
         {
-            cout<<i;
-        } while (i<=n)
-        
-       
+            cout<<i<< " ";
+        }
+        }while (i<n);  
+    
     }
-    
-    
-   
-    
-}
