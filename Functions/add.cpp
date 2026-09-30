@@ -16,18 +16,36 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// void Add(int x, int y){
+//      cout <<"Result: "<<x+y;
+// }
+
+// int main() {
+    
+//     int a, b;
+//     cout<<"Enter values: ";
+//     cin >>a>>b;
+//     Add (a,b);
+//     return 0;
+// }
+
+
+
 #include <iostream>
 using namespace std;
 
-void Add(int x, int y){
-     cout <<"Result: "<<x+y;
+void Add(){
+     int a, b;
+     cout<<"Enter values: ";
+     cin >>a>>b;
+     cout <<"Result: "<<a+b;
 }
 
 int main() {
-    
-    int a, b;
-    cout<<"Enter values: ";
-    cin >>a>>b;
-    Add (a,b);
+
+    Add ();
     return 0;
 }
