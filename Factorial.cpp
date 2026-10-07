@@ -1,15 +1,21 @@
 #include <iostream>
 using namespace std;
-int main() {
-    unsigned long long int n, Fact=1;
-    cout << "Enter value of n: ";
-    cin>>n;
-    for (int i=1; i<=n; i++)
+int Func(int n) {
+    if (n==0)
     {
-        Fact=Fact*i;
+        return 1;    
     }
-    cout<<"Factorial of "<<n<<"!="<<Fact;
-    
+    else
+    {
+        return n*Func(n-1);
+    }
     return 0;
 }
-
+int main()
+{
+    int n;
+    cout<<"Enter a value of n: ";
+    cin>>n;
+    cout << "Result: " << Func(n) << endl;
+    return 0;
+}
