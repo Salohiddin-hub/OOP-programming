@@ -6,10 +6,11 @@ class Rect
     private:
     int L,W;
     public:
-    void setdata(int l, int w)
+    void setdata()
     {
-        L=l;
-        W=w;
+        cout<<"Enter the L and W: ";
+        cin>>L>>W;
+      
     }
     int Area()
     {
@@ -23,9 +24,12 @@ class Rect
 };
 int main()
 {
-    Rect obj1, obj2;
-    obj1.setdata(5, 7);
+    Rect obj1, obj2, x;
+    obj1.setdata();
     obj1.display();
-    obj2.setdata(3,9);
+    obj2.setdata();
     obj2.display();
+    x.setdata();
+    x.display();
+    
 }
