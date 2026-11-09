@@ -1,0 +1,23 @@
+# Kompilyatsiya natijasida hosil bo'ladigan fayllar (Executables & Objects)
+*.exe
+*.out
+*.o
+*.obj
+
+# VS Code sozlama fayllari va qovuzloqlari
+.vscode/
+
+# Visual Studio / C++ vaqtinchalik va kesh fayllari
+*.user
+*.suo
+*.userosenv
+*.sln.docstates
+*.userbuild
+Build/
+bin/
+obj/
+
+# Windows operatsion tizimining vaqtinchalik fayllari
+Thumbs.db
+ehthumbs.db
+Desktop.ini
